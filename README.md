@@ -1,4 +1,4 @@
-# Rendu HTML-CSS-Res
+# Rendu HTML-CSS-Responsive
  
 Rendu dans le cadre de mon cours sur le HTML/CSS/Responsive, un site de 3 pages sur le thème de notre choix.
 

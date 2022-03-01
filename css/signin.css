@@ -1,0 +1,115 @@
+main{
+    width: 100%;
+    margin: 0;
+}
+
+.sign{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    margin: auto;
+    background-color: #3d5a80;
+    border-radius: 27px;
+    margin-top: 40px;
+    box-shadow: 0 3.5px #212529;
+}
+
+.email{
+    width: 50%;
+    margin: 20px;
+}
+.email label{
+    color: white;
+    font-size: 20px;
+}
+.email input{
+    margin-top: 10px;
+    background-color: #3d5a80;
+    border: none;
+    border-bottom: 1px solid white;
+    padding-bottom:5px ;
+    color: white;
+}
+
+
+.password{
+    width: 50%;
+    margin: 20px;
+}
+.password label{
+    color: white;
+    font-size: 20px;
+}
+.password input{
+    margin-top: 10px;
+    background-color: #3d5a80;
+    border: none;
+    border-bottom: 1px solid white;
+    padding-bottom:5px ;
+    color: white;
+}
+
+button {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: hsl(236, 32%, 26%);
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    margin: 20px;
+    border-radius: 5px;
+
+}
+
+button::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #4cc9f0;
+    transform-origin: center;
+    transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    color: #161616;
+}
+
+button:hover::before {
+    transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+.sign a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width : 800px){
+    .sign{
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        
+    }
+    .password{
+        width: 100%;
+    }
+    .sign form{
+        margin: 0 auto;
+        width: min-content;
+    }
+    .sign a{
+        display: block;
+    }
+}

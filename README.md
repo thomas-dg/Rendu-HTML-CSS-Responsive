@@ -1,3 +1,5 @@
 # Rendu HTML-CSS-Res
  
-<h1>salut</h1>
+Rendu dans le cadre de mon cours sur le HTML/CSS/Responsive, un site de 3 pages sur le thème de notre choix.
+
+https://media.giphy.com/media/3o72EZplI5RBdJU17q/giphy.gif
